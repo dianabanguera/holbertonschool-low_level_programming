@@ -1,7 +1,7 @@
 #include <stdio.h>
-/* Puts = Imprime información */ 
-/* Return, debe devolver valor 0 */
-/* main = Representa el inicio de ejecución */
+/* main = representa el inicio de la ejecución */
+/* puts = imprime */
+/* return = 0 */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
