@@ -1,6 +1,6 @@
 #include <stdio.h>
-/* main = imprime "Programming is like building a multillingual puzzle" */
-/* puts = imprime */
+/* main = prints "Programming is like building a multillingual puzzle" */
+/* puts = prints */
 /* return = 0 */
 int main(void)
 {
