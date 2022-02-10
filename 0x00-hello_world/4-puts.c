@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - init
+ * void no retorna valor
  * Return : 0
 */
 int main(void)
