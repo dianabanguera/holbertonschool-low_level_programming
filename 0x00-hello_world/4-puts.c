@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main imprime la frase "Programming is like building a multilingual puzzle"
+ * main - init imprime la frase "Programming is like building a multilingual puzzle"
  * void no retorna valor
  * Return : 0
 */
-int main(void)
+int main(void) 
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
