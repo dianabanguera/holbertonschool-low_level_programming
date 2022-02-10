@@ -1,7 +1,4 @@
-#include <studio.h>
-#include <string.h>
-int main (){
-	char str1[] = "Programming is like building a multilingual puzzle";
-puts(str1);
-return 0;
-}
+#!/bin/bash
+gcc -c puts "Programming is like building a multilingual puzzle";
+		return 0;
+
