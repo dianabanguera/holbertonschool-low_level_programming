@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - init
- * print alphabet 
+ * print_alphabet - prints the alphabet
  * Return: ALways 0
  */
 void print_alphabet(void)
