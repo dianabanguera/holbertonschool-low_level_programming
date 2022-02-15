@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main imprime el alphabeto
+ * main - init imprime el alphabeto
  * Return: ALways 0
  */
 void print_alphabet(void)
