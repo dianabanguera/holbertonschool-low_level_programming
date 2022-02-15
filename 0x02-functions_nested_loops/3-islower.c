@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main verifica que caracteres estan en minuscula
+ * main - verifica que caracteres estan en minuscula
  *
  * Return: Always 0
  */
