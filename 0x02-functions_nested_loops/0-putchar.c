@@ -2,7 +2,7 @@
 
 
 /**
- * main imptimir la palabra _putchar con un espacio
+ * main - init imptimir la palabra _putchar con un espacio
  * Return: ALways 0
  */
 int main(void)
