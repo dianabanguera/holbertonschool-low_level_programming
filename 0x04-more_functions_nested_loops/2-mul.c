@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mull - Multiplica dos integers
+ * mul - Multiplica dos integers
  * @a: numero a chequear
  * @b: segundo numero a chequear
  * Return: EL resultado
