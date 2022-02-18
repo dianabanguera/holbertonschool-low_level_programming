@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - prints the numbers 0-9
- * @c: Character to check
+ * @c
  * Return: ALways 0
  */
 void print_numbers(void)
