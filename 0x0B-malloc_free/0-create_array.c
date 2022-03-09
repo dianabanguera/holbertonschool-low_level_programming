@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * create_array - crea un array de caracteres y se inicialice con un caracter en especifíco
+ * create_array - crea un array de caracteres que inicia en c
  * @size: Tamaño de array
  * @c: caracter con el que va iniciar el caracter
  *
- * Return: Si el tanmaño es 0 o falla es NULL de lo contrario un puntero al array
+ * Return: Si el tamaño es 0 o falla es NULL
  */
 char *create_array(unsigned int size, char c)
 {
