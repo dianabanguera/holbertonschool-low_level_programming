@@ -4,8 +4,7 @@
 /**
  * malloc_checked - function that allocates memory using malloc
  * @b: memoria
- * Return: array 
- *
+ * Return: array
  */
 void *malloc_checked(unsigned int b)
 {
@@ -15,6 +14,6 @@ void *malloc_checked(unsigned int b)
 	if (!arr)
 	{
 		exit(98);
-	}	
+	}
 	return (arr);
 }
