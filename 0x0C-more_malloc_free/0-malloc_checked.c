@@ -3,8 +3,8 @@
 
 /**
  * malloc_checked - function that allocates memory using malloc
- * @b: memoria
- * Return: array
+ * @b: numero de bytes que seran ubicados en memoria
+ * Return: puntero
  */
 void *malloc_checked(unsigned int b)
 {
@@ -15,5 +15,6 @@ void *malloc_checked(unsigned int b)
 	{
 		exit(98);
 	}
+
 	return (arr);
 }
