@@ -9,13 +9,15 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *arr;
+	void *arr;
 
-	arr = malloc(sizeof(unsigned int) * b);
-	if (!arr)
+	arr = malloc(b);
+	if (arr == NULL)
 	{
 		exit(98);
 	}
-
-	return (arr);
+	else
+	{
+		return (arr);
+	}
 }
