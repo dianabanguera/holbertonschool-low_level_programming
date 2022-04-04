@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_binary - 
- *
- *
+ * print_binary - function that prints a binary from a decimal number
+ * @n: decimal number
+ * Return: void
  */
 void print_binary(unsigned long int n)
 {
