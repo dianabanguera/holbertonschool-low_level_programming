@@ -8,36 +8,36 @@
  */
 int main(int argc, char *argv[])
 {
-int op1, op2, rd1, wr2, cl1, cl2;
+int file, file2, path, destiny, end1, end2;
 char buffer[1024];
 
 if (argc != 3)
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
-op1 = open(argv[1], O_RDONLY);
-if (op1 == -1)
+file = open(argv[1], O_RDONLY);
+if (file == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-op2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-if (op2 == -1)
+file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+if (file2 == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 do {
-rd1 = read(op1, buffer, 1024);
-if (rd1 == -1)
+path = read(file, buffer, 1024);
+if (path == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-wr2 = write(op2, buffer, rd1);
-if (wr2 == -1)
+destiny = write(file2, buffer, path);
+if (destiny == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
-} while (rd1 == 1024);
-cl1 = close(op1);
-cl2 = close(op2);
-if (cl1 == -1)
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", op1), exit(100);
-if (cl2 == -1)
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", op2), exit(100);
+} while (path == 1024);
+end1 = close(file);
+end2 = close(file2);
+if (end1 == -1)
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file), exit(100);
+if (end2 == -1)
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file2), exit(100);
 return (0);
 }
