@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_dlistint - libera la lista 
+ * free_dlistint - libera la lista
  * @head: nodo inicial de la lista
  * Return: nothing
  */
