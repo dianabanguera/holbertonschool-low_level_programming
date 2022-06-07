@@ -8,7 +8,7 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned int idx = 0, i;
 	hash_node_t *node = NULL;
-    hash_node_t *last = NULL;
+	hash_node_t *last = NULL;
 
 	if (!ht)
 		return;
@@ -34,3 +34,4 @@ void hash_table_print(const hash_table_t *ht)
 	}
 	printf("}\n");
 }
+
